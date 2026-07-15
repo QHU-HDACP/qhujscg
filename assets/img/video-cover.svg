@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="200" viewBox="0 0 420 200">
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#d9e6f3"/><stop offset="1" stop-color="#90aac8"/></linearGradient></defs>
+<rect width="420" height="200" fill="url(#g)"/>
+<rect x="0" y="0" width="420" height="200" fill="rgba(255,255,255,0.18)"/>
+<circle cx="210" cy="100" r="31" fill="#ffffff" opacity=".92"/>
+<polygon points="200,82 200,118 230,100" fill="#005BAC"/>
+<text x="210" y="34" text-anchor="middle" font-size="18" font-family="Microsoft YaHei" fill="#ffffff" font-weight="700">成果视频示意图</text>
+<text x="210" y="175" text-anchor="middle" font-size="14" font-family="Microsoft YaHei" fill="#eef6ff">替换为真实视频封面或播放器即可</text>
+</svg>

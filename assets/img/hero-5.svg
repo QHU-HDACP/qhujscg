@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="314" viewBox="0 0 960 314">
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#819cb6"/><stop offset="1" stop-color="#d2dce6"/></linearGradient></defs>
+<rect width="960" height="314" fill="url(#g)"/>
+<path d="M30 230 C120 160, 240 160, 330 220 S520 286, 620 230 S840 170, 930 235" fill="none" stroke="#ffffff" stroke-width="4" opacity=".4"/>
+<rect x="105" y="60" width="240" height="150" fill="#ffffff" opacity=".78"/>
+<rect x="385" y="78" width="185" height="122" fill="#ffffff" opacity=".62"/>
+<rect x="610" y="48" width="240" height="165" fill="#305272" opacity=".44"/>
+<text x="138" y="120" font-size="26" font-family="Microsoft YaHei" fill="#27598d" font-weight="700">青海大学蓝色主题</text>
+<text x="138" y="160" font-size="18" font-family="Microsoft YaHei" fill="#2f5578">边框方正、版式对齐、结构仿照原站</text>
+</svg>
