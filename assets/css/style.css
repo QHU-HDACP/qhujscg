@@ -200,8 +200,14 @@ img{display:block;max-width:100%}
 .video-box{height:200px;overflow:hidden}
 .video-box img{width:100%;height:100%;object-fit:cover}
 .video-box video{width:100%;height:100%;display:block;object-fit:cover;background:#000}
-.intro-box{padding:18px 18px 14px;background:#fbf8f5}
+.intro-box{padding:18px 18px 14px;background:#fbf8f5;position:relative}
 .intro-box p{margin:0;text-indent:2em;color:#444;text-align:justify}
+.intro-box.intro-clamped{overflow:hidden;box-sizing:border-box}
+.intro-box.intro-clamped::after{content:"";position:absolute;left:1px;right:1px;bottom:1px;height:54px;background:linear-gradient(rgba(251,248,245,0),#fbf8f5 72%);pointer-events:none}
+.intro-toggle{cursor:pointer;color:#1f4e9c;font-size:13px}
+.intro-box.intro-clamped .intro-toggle{position:absolute;right:18px;bottom:10px;z-index:2;background:#fbf8f5;padding-left:8px}
+.intro-box:not(.intro-clamped) .intro-toggle{display:block;text-align:right;margin-top:8px}
+.intro-toggle:hover{text-decoration:underline}
 .section-wave{
   margin-top:38px;
   background:
