@@ -52,3 +52,36 @@
     if (t && (t.tagName === 'IMG' || t.tagName === 'IFRAME')) e.preventDefault();
   });
 })();
+
+
+// 首页「成果简介」折叠：裁到与「成果视频」等高，末尾省略号可点击展开/收起。
+(function(){
+  var box = document.querySelector('.home-main .intro-box');
+  var vid = document.querySelector('.home-main .video-box');
+  if (!box || !vid) return;
+  var toggle = document.createElement('span');
+  toggle.className = 'intro-toggle';
+  box.appendChild(toggle);
+  function clamp(on){
+    if (on){
+      box.style.height = vid.offsetHeight + 'px';
+      box.classList.add('intro-clamped');
+      toggle.textContent = '……展开';
+    } else {
+      box.style.height = '';
+      box.classList.remove('intro-clamped');
+      toggle.textContent = '收起';
+    }
+  }
+  clamp(true);
+  // 内容本就不超高则无需折叠
+  if (box.scrollHeight <= box.clientHeight){
+    box.style.height = '';
+    box.classList.remove('intro-clamped');
+    toggle.remove();
+    return;
+  }
+  toggle.addEventListener('click', function(){
+    clamp(!box.classList.contains('intro-clamped'));
+  });
+})();
